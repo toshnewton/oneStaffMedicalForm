@@ -183,6 +183,7 @@ button:hover {
 
     input[type=radio] {
         width:20%;
+        margin:5px 5px 5px 5px;
     }
 
     textarea {
@@ -195,7 +196,7 @@ button:hover {
   }
 
   /* Moblie */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 491px) {
     
     #logo{
         width:100%;
@@ -206,4 +207,10 @@ button:hover {
     .logo{
         height: 90px;
     }
+
+    input[type=radio] {
+        width:10%;
+        margin:0px 0px 0px 0px;
+    }
+
   }
