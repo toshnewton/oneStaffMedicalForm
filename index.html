@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Employee Incident Report Form</title>
-<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <meta name="author" content="Tosh Newton">
 <link rel="stylesheet" href="style.css">
@@ -26,101 +26,101 @@
     <form id="form" action="mailto:awettengel@onestaffmedical.com;kdawson@onestaffmedical.com" method="GET">
         <div class="tab">
             <p class="inlineP">I am reporting a work related:</p>
-            <input type="radio" id="injury" name="reportType" value="Injury" required>
+            <input type="radio" id="injury" oninput="this.className = ''" name="reportType" value="Injury" required>
             <label for="injury">Injury</label>
-            <input type="radio" id="illness" name="reportType" value="Illness">
+            <input type="radio" id="illness" oninput="this.className = ''" name="reportType" value="Illness">
             <label for="illness">Illness</label>
         </div>
 
         <div class="tab">
             <label for="employeeName">Your Name:</label>
-            <input type="text" id="employeeName" name="employeeName" class="formTextBox" required><br>
+            <input type="text" id="employeeName" oninput="this.className = ''" name="employeeName" class="formTextBox" required><br>
 
             <label for="jobTitle">Job Title:</label>
-            <input type="text" id="jobTitle" name="jobTitle" autocomplete="off" class="formTextBox" required><br>
+            <input type="text" id="jobTitle" oninput="this.className = ''" name="jobTitle" autocomplete="off" class="formTextBox" required><br>
         </div>
 
         <div class="tab">
             <label for="recruiterName">Recruiter Name:</label>
-            <input type="text" id="recruiterName" name="recruiterName" class="formTextBox" required><br>
+            <input type="text" id="recruiterName" oninput="this.className = ''" name="recruiterName" class="formTextBox" required><br>
 
             <label for="supervisorAtFacilityName">Supervisor at Facility Name:</label>
-            <input type="text" id="supervisorAtFacilityName" name="supervisorAtFacilityName" autocomplete="off" class="formTextBox" required><br>
+            <input type="text" id="supervisorAtFacilityName" oninput="this.className = ''" name="supervisorAtFacilityName" autocomplete="off" class="formTextBox" required><br>
 
             <label for="reportTo">Who did you report to?</label>
-            <input type="text" id="reportTo" name="reportTo" autocomplete="off" class="formTextBox" required><br>
+            <input type="text" id="reportTo" oninput="this.className = ''" name="reportTo" autocomplete="off" class="formTextBox" required><br>
         </div>
 
         <div class="tab">
             <label for="incidentDate">Date of incident:</label>
-            <input type="date" id="incidentDate" name="incidentDate" class="formTextBox"  required><br>
+            <input type="date" id="incidentDate" oninput="this.className = ''" name="incidentDate" class="formTextBox"  required><br>
 
             <label for="incidentTime">Time of incident:</label>
-            <input type="time" id="incidentTime" name="incidentTime" class="formTextBox" required><br>    
+            <input type="time" id="incidentTime" oninput="this.className = ''" name="incidentTime" class="formTextBox" required><br>    
 
             <label for="shiftStartTime">Time you started shift:</label>
-            <input type="time" id="shiftStartTime" name="shiftStartTime" class="formTextBox" required><br>
+            <input type="time" id="shiftStartTime" oninput="this.className = ''" name="shiftStartTime" class="formTextBox" required><br>
         </div>
 
         <div class="tab">
             <label for="witnesses">Names of witnesses (if any):</label>
-            <input type="text" id="witnesses" name="witnesses" autocomplete="off" placeholder="n/a if not applicable" class="formTextBox"><br>
+            <input type="text" id="witnesses" oninput="this.className = ''" name="witnesses" autocomplete="off" placeholder="n/a if not applicable" class="formTextBox"><br>
         </div>
 
         <div class="tab">
             <p class="inlineP">Was anyone assisting you at the time?</p>
-            <input type="radio" id="yes" name="assistance" value="Yes" required>
+            <input type="radio" id="yes" oninput="this.className = ''" name="assistance" value="Yes" required>
             <label for="yes">Yes</label>
-            <input type="radio" id="no" name="assistance" value="No">
+            <input type="radio" id="no" oninput="this.className = ''" name="assistance" value="No">
             <label for="no">No</label><br><br>
             
             <label for="assistanceFromWho">Who?</label>
-            <input type="text" id="assistanceFromWho" name="assistanceFromWho" autocomplete="off" placeholder="n/a if not applicable" class="formTextBox">
+            <input type="text" id="assistanceFromWho" oninput="this.className = ''" name="assistanceFromWho" autocomplete="off" placeholder="n/a if not applicable" class="formTextBox">
         </div>
 
         <div class="tab">
             <p>Where exactly did it happen?</p>
-            <textarea rows="4" cols="50" name="location" placeholder="Enter location here..." required></textarea><br>
+            <textarea rows="4" cols="50" oninput="this.className = ''" name="location" placeholder="Enter location here..." required></textarea><br>
 
             <p>What were you doing at the time?</p>
-            <textarea rows="4" cols="50" name="task" placeholder="Enter task here..."required></textarea><br>
+            <textarea rows="4" cols="50" oninput="this.className = ''" name="task" placeholder="Enter task here..."required></textarea><br>
         </div>
 
         <div class="tab">
             <p>Describe step by step what led to the incident:</p>
-            <textarea rows="4" cols="50" name="preceedingIncident" placeholder="Enter what led to the incident here..."required></textarea><br>
+            <textarea rows="4" cols="50" oninput="this.className = ''" name="preceedingIncident" placeholder="Enter what led to the incident here..."required></textarea><br>
         </div>
         
         <div class="tab">
             <p>What part(s) of your body were injured?</p>
-            <textarea rows="4" cols="50" name="affectedAreas" placeholder="Enter affected body part(s) here..."required></textarea><br>
+            <textarea rows="4" cols="50" oninput="this.className = ''" name="affectedAreas" placeholder="Enter affected body part(s) here..."required></textarea><br>
         </div>
 
         <div class="tab">
             <p class="inlineP">Did you get medical treatment?</p>
-            <input type="radio" id="yes" name="medicalTreatment" value="Yes" required>
+            <input type="radio" id="yes" oninput="this.className = ''" name="medicalTreatment" value="Yes" required>
             <label for="yes">Yes</label>
-            <input type="radio" id="no" name="medicalTreatment" value="No">
+            <input type="radio" id="no" oninput="this.className = ''" name="medicalTreatment" value="No">
             <label for="no">No</label><br><br>
 
             <label for="treatmentDr">If yes, whom did you see?</label><br>
-            <input type="text" id="treatmentDr" name="treatmentDr" autocomplete="off" placeholder="n/a if not applicable" class="formTextBox" ><br>
+            <input type="text" id="treatmentDr" oninput="this.className = ''" name="treatmentDr" autocomplete="off" placeholder="n/a if not applicable" class="formTextBox" ><br>
 
             <label for="treatmentDrPhone">Doctor Phone Number:</label><br>
-            <input type="tel" id="treatmentDrPhone" name="treatmentDrPhone" autocomplete="off" placeholder="555-555-5555" class="formTextBox" ><br>
+            <input type="tel" id="treatmentDrPhone" oninput="this.className = ''" name="treatmentDrPhone" autocomplete="off" placeholder="555-555-5555" class="formTextBox" ><br>
 
-            <textarea rows="2" cols="50" name="treatmentFacility" placeholder="Enter name and address of facility if applicable here..."></textarea><br>
+            <textarea rows="2" cols="50" oninput="this.className = ''" name="treatmentFacility" placeholder="Enter name and address of facility if applicable here..."></textarea><br>
         </div>
 
         <div class="tab">
             <p class="inlineP">Has this body part been injured before?</p>
-            <input type="radio" id="yes" name="assistance" value="Yes" required>
+            <input type="radio" id="yes" oninput="this.className = ''" name="assistance" value="Yes" required>
             <label for="yes">Yes</label>
-            <input type="radio" id="no" name="assistance" value="No">
+            <input type="radio" id="no" oninput="this.className = ''" name="assistance" value="No">
             <label for="no">No</label>
 
             <p>If yes, when and what happened?</p>
-            <textarea rows="2" cols="50" name="treatmentFacility" placeholder="Enter previous injury details here..."></textarea><br>
+            <textarea rows="2" cols="50" oninput="this.className = ''" name="treatmentFacility" placeholder="Enter previous injury details here..."></textarea><br>
         </div>
         
         <div>
