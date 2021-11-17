@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+    font-family: fagoCoBlack;
+    src: url(fagoCoBlack.woff);
+}
+
+html,body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding-bottom:60%;
+}
+
+body {
+    background-color: #cbe9e3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: fagoCoBlack, serif;
+    color:#262626;
+}
+
+hr {
+    height:1px;
+    border:3px solid #308b7c;
+    border-radius:7px;
+    width:90%;
+    margin-top:15px;
+}
+
+p, label, textarea {
+    font-family: "Open Sans", sans-serif;
+    text-transform: lowercase;
+    color:#262626;
+}
+
+/* Logo */
+
+.logo {
+    width:100%;
+    background-color:white;
+    height:160px;
+    border-bottom:7px solid #308b7c;
+}
+
+#logo {
+    padding-left:10%;
+}
+
+/*Flex Box Header*/
+
+.rowHeader {
+    max-width: 600px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.rowHeader h1, h2 {
+    margin-block-end:0px;
+}
+.rowHeader p {
+    text-transform: unset;
+    text-align: justify;
+    text-transform: lowercase;
+}
+
+/*Form*/
+
+#form {
+    margin: 50px auto;
+    font-family: "Open Sans", sans-serif;
+    padding: 50px;
+    width: 70%;
+    min-width: 300px;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+input {
+    padding: 10px;
+    margin-top:5px;
+    margin-bottom:5px;
+    width: 100%;
+    font-size: 17px;
+    font-family: "Open sans", sans-serif;
+    
+    border-radius: 7px;
+  }
+
+input[type=radio] {
+    width:3%;
+    margin-left:10%;
+    margin-right:-5px;
+}
+
+input[type=text]:focus{
+    border:4px solid #ed9d62;
+}
+
+textarea:focus{
+    border:4px solid #ed9d62;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 7px;
+}
+.inlineP {
+    float:left;
+    margin:0;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+  
+.tab {
+    display: none;
+}
+
+button {
+    margin-top:1em;
+    background-color: #4fc1b1;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: "Open sans", sans-serif;
+    cursor: pointer;
+    text-transform: lowercase;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+  
+#prevBtn {
+    background-color: #bbbbbb;
+    text-transform: lowercase;
+}
+  
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+  
+.step.active {
+    opacity: 1;
+}
+
+.step.finish {
+    background-color: #ed9d62;
+}
+
+/* -----Moblie----- */
+@media only screen and (max-width: 600px) {
+    
+    #logo{
+        width:100%;
+        padding:0;
+        height:150px;
+    }
+
+    .rowHeader {
+        width:70%;
+    }
+
+    p, label, textarea {
+        font-size:1.3em;
+    }
+
+    input[type=radio] {
+        width:20%;
+    }
+
+    textarea {
+        text-indent: 0px;
+    }
+
+    .step {
+    display: none;
+    }
+  }
+
+  /* Moblie */
+@media only screen and (max-width: 450px) {
+    
+    #logo{
+        width:100%;
+        padding:0;
+        height:80px;
+    }
+    
+    .logo{
+        height: 90px;
+    }
+  }
